@@ -90,7 +90,7 @@ class App extends Component {
     // First and last numbers displayed in pagination bar
     let firstOfNums, lastOfNums;
     if (numberOfPages > 5 && page >= 4) {
-      firstOfNums = page - 3;
+      firstOfNums = page < numberOfPages - 1 ? page - 3 : page - 4;
       lastOfNums = page < numberOfPages - 1 ? page + 1 : page;
     } else if (numberOfPages > 5 && page < 4) {
       firstOfNums = 0;
