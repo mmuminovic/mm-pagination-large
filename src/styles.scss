@@ -1,0 +1,74 @@
+// Find members
+
+.find-members {
+    width: 100%;
+    margin: 0 auto;
+
+    .square {
+        width: .7em;
+        height: .7em;
+        margin: .5em;
+        display: inline-block;
+    }
+
+    input {
+        text-align: center;
+    }
+}
+
+.card {
+    border: 1px solid #777;
+    width: 100%;
+    height: 50px;
+    display: table;
+    table-layout: fixed;
+    vertical-align: top;
+
+    &__image {
+        display: table-cell;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100px;
+        height: 100px;
+        -webkit-clip-path: circle(50%);
+        clip-path: circle(50%);
+        transform: scale(.8);
+        border: 3px solid lightblue;
+        border-radius: 50%;
+    }
+
+    &__details {
+        display: table-cell;
+        vertical-align: middle;
+
+        p {
+            font-size: small;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        &--name {
+            font-size: 15px !important;
+            font-weight: bold;
+        }
+
+        &--location {
+            font-style: italic;
+        }
+    }
+
+}
+
+.pagination {
+    justify-content: center;
+
+    a.page-link {
+        color: #333;
+        line-height: 2.5;
+
+        &:hover {
+            color: #000;
+        }
+    }
+}
